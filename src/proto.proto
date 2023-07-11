@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message Message {
+    string text = 1;
+}
+
+enum Status {
+    FAIL = 0;
+    OK = 1;
+    DISCONNECT = 2;
+}
+
+message Response {
+    Status status = 1;
+}
